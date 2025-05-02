@@ -1,0 +1,110 @@
+:root {
+    --main-color: #00897b;
+    --bg-color: #f0f4f8;
+    --card-color: #ffffff;
+    --text-color: #333;
+    --accent: #00695c;
+    --danger: #e53935;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 1rem;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  h1 {
+    margin: 0;
+    color: var(--main-color);
+  }
+  
+  button {
+    cursor: pointer;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: var(--accent);
+  }
+  
+  #library-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+  }
+  
+  .book-card {
+    background: var(--card-color);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .book-card h3 {
+    margin-top: 0;
+  }
+  
+  .card-buttons {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .card-buttons button {
+    flex: 1;
+    font-size: 0.9rem;
+  }
+  
+  button.read-toggle {
+    background-color: #4caf50;
+  }
+  
+  button.read-toggle.not-read {
+    background-color: #ff9800;
+  }
+  
+  button.delete-btn {
+    background-color: var(--danger);
+  }
+  
+  dialog {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    width: 300px;
+    max-width: 90%;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
