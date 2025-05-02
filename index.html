@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project: Library</title>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="shortcut icon" href="https://st4.depositphotos.com/2485347/27304/v/950/depositphotos_273046856-stock-illustration-vector-cartoon-illustration-open-book.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>📚 Mi Biblioteca</h1>
+    <button id="new-book-btn">➕ Nuevo Libro</button>
+  </header>
+
+  <main id="library-container"></main>
+
+  <dialog id="book-dialog">
+    <form id="book-form" method="dialog">
+      <h2>Agregar Libro</h2>
+
+      <label for="title">Título:</label>
+      <input type="text" id="title" name="title" required />
+
+      <label for="author">Autor:</label>
+      <input type="text" id="author" name="author" required />
+
+      <label for="pages">Páginas:</label>
+      <input type="number" id="pages" name="pages" required min="1" />
+
+      <label>
+        <input type="checkbox" id="read" name="read" />
+        ¿Leído?
+      </label>
+
+      <div class="form-buttons">
+        <button type="submit">Agregar</button>
+        <button type="button" id="cancel-btn">Cancelar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
