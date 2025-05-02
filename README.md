@@ -32,7 +32,7 @@ Project: Library/
 
 ## 📸 Vista previa
 
-![Vista previa del proyecto](https://itsuli19.github.io/Project-Library/) <!-- Puedes reemplazar este link con uno real más adelante -->
+[Vista previa del proyecto](https://itsuli19.github.io/Project-Library/) <!-- Puedes reemplazar este link con uno real más adelante -->
 
 ## ✅ Cómo usar
 
